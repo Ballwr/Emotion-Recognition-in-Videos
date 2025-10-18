@@ -41,3 +41,18 @@ python main.py
 - The script displays two windows: the video feed and an emotion display image.
 - If an emotion image is missing the script shows a white placeholder.
 - See [main.py](main.py) for implementation details.
+
+## Viewing the reference video
+
+- Place the reference video file named `Static.mp4` in the project root (same folder as `main.py`).
+- Quick checks before running:
+  ```sh
+  ls -l Static.mp4
+  file Static.mp4
+  # optional: inspect codecs (install ffmpeg if needed)
+  ffprobe Static.mp4
+  ```
+- If you want to use your camera instead, set `video_path = 0` in `main.py` and run:
+  ```sh
+  python main.py
+  ```
