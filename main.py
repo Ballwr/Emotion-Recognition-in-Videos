@@ -8,7 +8,7 @@ if console_hwnd:
     # 0 = SW_HIDE → hide console
     ctypes.windll.user32.ShowWindow(console_hwnd, 0)
 
-# ---------------- YOUR SCRIPT STARTS HERE ----------------
+# ---------------- SCRIPT STARTS HERE ----------------
 import cv2
 import time
 from deepface import DeepFace
